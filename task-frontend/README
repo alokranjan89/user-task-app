@@ -1,0 +1,203 @@
+#TaskFlow – User Task Manager (Frontend)
+
+TaskFlow is a **modern task management frontend application** built using **React, Vite, and TailwindCSS**.
+It connects to a **User Management & Task Tracker backend API** and allows users to securely manage their tasks through an intuitive dashboard.
+
+---
+
+# 🚀 Features
+
+## 🔐 Authentication
+
+* User Registration
+* User Login
+* JWT Authentication
+* Protected Routes
+* Logout functionality
+
+---
+
+## 📋 Task Management
+
+Users can manage their tasks efficiently:
+
+* Create new tasks
+* View all tasks
+* Update task status
+* Delete tasks
+
+---
+
+## 📊 Dashboard
+
+* Clean modern UI
+* Dark theme interface
+* Responsive layout
+* Task management board
+* Logged-in user information
+
+---
+
+## 👑 Admin Capabilities
+
+*(Accessible to Admin users only)*
+
+* View all users
+* Delete users
+* View all tasks
+
+---
+
+# 🛠 Tech Stack
+
+### Frontend
+
+* React
+* Vite
+* Tailwind CSS
+* React Router
+
+### API Communication
+
+* Axios
+
+### Testing
+
+* Jest
+* React Testing Library
+
+### Backend (Connected API)
+
+* Node.js
+* Express
+* Prisma ORM
+* SQLite
+* JWT Authentication
+
+---
+
+# 📂 Project Structure
+
+```
+src
+│
+├── components
+│   └── ProtectedRoute.jsx
+│
+├── pages
+│   ├── Login.jsx
+│   ├── Register.jsx
+│   ├── Dashboard.jsx
+│   └── Admin.jsx
+│
+├── services
+│   └── api.js
+│
+tests
+```
+
+---
+
+# ⚙️ Setup Instructions
+
+## 1️⃣ Clone the Repository
+
+```bash
+git clone <your-repository-link>
+cd task-frontend
+```
+
+---
+
+## 2️⃣ Install Dependencies
+
+```bash
+npm install
+```
+
+---
+
+## 3️⃣ Configure Environment Variables
+
+Create a `.env` file in the project root.
+
+Example:
+
+```env
+VITE_API_URL=http://localhost:5000
+```
+
+You can also refer to:
+
+```
+.env.example
+```
+
+---
+
+## 4️⃣ Run the Development Server
+
+```bash
+npm run dev
+```
+
+Frontend will run at:
+
+```
+http://localhost:5173
+```
+
+---
+
+# 🧪 Running Tests
+
+Run all frontend tests:
+
+```bash
+npm test
+```
+
+Tests include:
+
+* Component tests
+* API interaction tests
+
+---
+
+# 🔐 Security
+
+This project follows basic security practices:
+
+* JWT based authentication
+* Protected frontend routes
+* Environment variables for API configuration
+* No sensitive credentials stored in repository
+
+---
+# 📌 API Integration
+
+This frontend communicates with the backend using the following APIs:
+
+```
+POST   /auth/register
+POST   /auth/login
+
+GET    /users/me
+GET    /users
+
+POST   /tasks
+GET    /tasks
+PUT    /tasks/:id
+DELETE /tasks/:id
+```
+
+---
+
+# 👨‍💻 Author
+
+**Alok Ranjan**
+
+Aspiring Software Developer passionate about building scalable full-stack applications.
+
+GitHub
+[https://github.com/alokranjan89](https://github.com/alokranjan89)
